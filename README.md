@@ -41,6 +41,21 @@ Run with Windows PowerShell 5.1 and the applicable AD/GroupPolicy/DHCPServer mod
 
 Configure your own SMTP relay, output locations and CA names via script parameters. The certificate renewal scripts use `-Renew` explicitly. For Task Scheduler you can invoke `.ps1` files directly using `powershell.exe -NoProfile -File <script> ...`.
 
+
+## Additional health and audit scripts
+
+- `active-directory/Test-ADHealth.ps1` — domain controller DNS, LDAP, SYSVOL, NETLOGON, replication and FSMO summary.
+- `active-directory/Find-InactiveADAccounts.ps1` — approximate inactive users/computers based on replicated `LastLogonDate`.
+- `certificate-services/Test-CAHealth.ps1` — local CA service and CRL `NextUpdate` checks; optional HTTP publication reachability.
+
+```powershell
+.\active-directory\Test-ADHealth.ps1
+.\active-directory\Find-InactiveADAccounts.ps1 -InactiveDays 90 -Type Both
+.\certificate-services\Test-CAHealth.ps1 -WarningDays 14
+```
+
+The checks do not modify AD, Exchange, certificates, or CA configuration. The CA script examines local CRLs; an optional URL check tests reachability, not the downloaded CRL's validity.
+
 ## Bugs
 
 Please report issues at https://github.com/mnheia/windows-admin-tools/issues
