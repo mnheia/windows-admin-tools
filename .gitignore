@@ -1,0 +1,15 @@
+*.pst
+*.pfx
+*.p12
+*.key
+*.ppk
+*.pem
+*.secret
+*.log
+*.csv
+*.txt
+*.bak
+*.bak.*
+*.xml
+!*.example.xml
+.vscode/
