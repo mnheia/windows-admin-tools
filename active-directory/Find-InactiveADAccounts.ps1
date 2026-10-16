@@ -1,4 +1,14 @@
-# Report potentially inactive AD users and computers (approximate replicated logon timestamps).
+<#
+.SYNOPSIS
+    Report potentially inactive AD users and computers (approximate replicated logon timestamps).
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-admin-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 param(
     [int]$InactiveDays = 90,
     [ValidateSet('Users','Computers','Both')][string]$Type = 'Both',
