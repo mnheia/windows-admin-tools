@@ -1,4 +1,14 @@
-# Quick health check for all domain controllers in the current domain.
+<#
+.SYNOPSIS
+    Quick health check for all domain controllers in the current domain.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-admin-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 param([int]$ReplicationWarningHours = 24)
 
 Import-Module ActiveDirectory -ErrorAction Stop
