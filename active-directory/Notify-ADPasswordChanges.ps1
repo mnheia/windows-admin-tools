@@ -1,4 +1,14 @@
-# Notify users when their AD password was changed recently.
+<#
+.SYNOPSIS
+    Notify users when their AD password was changed recently.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-admin-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 param(
     [int]$MinutesChanged = 15,
     [string]$SearchBase,
