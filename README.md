@@ -1,4 +1,4 @@
-Copyright (c) 2026, Mnheia <mnheia@gmail.com>
+Copyright (c) 2026 mnheia
 
 # windows-admin-tools
 
