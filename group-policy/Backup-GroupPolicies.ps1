@@ -1,4 +1,14 @@
-# Backup all Group Policy Objects and create an HTML report.
+<#
+.SYNOPSIS
+    Backup all Group Policy Objects and create an HTML report.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-admin-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 param(
     [string]$OutputRoot = 'C:\GPO-Backup',
     [string]$Domain,

@@ -1,4 +1,14 @@
-# Renew an issuing CA CRL and copy CRLs to a publication folder.
+<#
+.SYNOPSIS
+    Renew an issuing CA CRL and copy CRLs to a publication folder.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-admin-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 param(
     [Parameter(Mandatory)][string]$CrlPath,
     [Parameter(Mandatory)][string]$PublishDirectory,

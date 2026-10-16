@@ -1,4 +1,14 @@
-# Upload CRL files to a remote server with PuTTY PSCP and SSH key authentication.
+<#
+.SYNOPSIS
+    Upload CRL files to a remote server with PuTTY PSCP and SSH key authentication.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-admin-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 param(
     [Parameter(Mandatory)][string]$CrlDirectory,
     [Parameter(Mandatory)][string[]]$CrlNames,

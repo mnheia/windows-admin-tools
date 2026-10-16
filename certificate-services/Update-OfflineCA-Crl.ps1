@@ -1,4 +1,14 @@
-# Renew and optionally copy an offline CA CRL.
+<#
+.SYNOPSIS
+    Renew and optionally copy an offline CA CRL.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-admin-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 param(
     [Parameter(Mandatory)][string]$CrlPath,
     [string]$CopyTo,

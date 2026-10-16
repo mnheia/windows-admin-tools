@@ -1,4 +1,14 @@
-# Check local AD CS service and CRL validity, optionally including a published CRL.
+<#
+.SYNOPSIS
+    Check local AD CS service and CRL validity, optionally including a published CRL.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-admin-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 param(
     [string]$CrlDirectory = "$env:windir\System32\CertSrv\CertEnroll",
     [string]$PublishedCrlUrl,
