@@ -1,4 +1,14 @@
-# Find home directories with no matching Active Directory username.
+<#
+.SYNOPSIS
+    Find home directories with no matching Active Directory username.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-admin-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 param(
     [Parameter(Mandatory)][string]$HomeRoot,
     [string]$SearchBase,
