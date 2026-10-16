@@ -1,4 +1,14 @@
-# Report AD passwords that expired within the last N days.
+<#
+.SYNOPSIS
+    Report AD passwords that expired within the last N days.
+
+.NOTES
+    Author: mnheia
+    Copyright: (c) 2026 mnheia
+    Repository: https://github.com/mnheia/windows-admin-tools
+    License: GPL-3.0 (see LICENSE)
+#>
+
 param(
     [int]$DaysAfterExpiry = 7,
     [string]$SearchBase,
